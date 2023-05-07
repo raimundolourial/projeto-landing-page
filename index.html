@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js" defer></script>
+    <title>F4 BANK</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- <nav>Menu</nav>-->
+        <a href="#" class="logo"><img src="./midia/f4bank.svg" alt="Nada" height="71.27px" width="177px"></a>
+        <nav class="navigation">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Página Inicial</a></li>
+                <li class="nav-item"><a href="#sessao1" class="nav-link">Vantagens</a></li>
+                <li class="nav-item"><a href="#formulario" class="nav-link">Contato</a></li>
+            </ul>
+            <!--<div class="menu">
+        <span class="bar"> </span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>-->
+        </nav>
+    </header>
+    <main>
+        <!-- <aside>Relacionado</aside>-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1 class="text-h1">O banco que inclui você em tudo</h1>
+                <ul class="vantagens">
+                    <li class="item-vantagens"><i class='bx bx-credit-card'></i> Cartão sem taxa</li>
+                    <li class="item-vantagens"><i class='bx bxs-user-account'></i> Conta Corretnte Digital</li>
+                    <li class="item-vantagens"><i class='bx bx-lock'></i> Proteção de conta</li>
+                    <li class="item-vantagens"><i class='bx bx-money-withdraw'></i> ChasBack acessibilidade</li>
+                </ul>
+                <a href="#" class="home-btn">Abrir conta</a>
+            </div>
+            <div class="home-img">
+                <img src="./midia/Group 1.png" alt="Banco Digital">
+            </div>
+        </section>
+
+        <section class="sessao1" id="sessao1">
+            <h1>Recursos Facilitados</h1>
+            <div class="sessao1-card">
+                <div class="card-1">
+                    <i><img src="./midia/cell + cardiconS1.png" width="50px" height="70px"></i>
+                    <P>Tenha tudo
+                        em suas mãos
+                        com a facilidade
+                        do nosso app</P>
+                </div>
+                <div class="card-2"><i><img src="./midia/card.png" width="70px" height="60px"></i>
+                    <P>Com nosso cartão
+                        você está totalmente
+                        seguro que qualquer
+                        imprevisto</P>
+                </div>
+                <div class="card-3"><i><img src="./midia/Vector.png" width="70px" height="50px"></i>
+                    <P>Receba seu cartão
+                        totalmente gratuito
+                        em sua casa</P>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao2">
+            <div class="sessao2-text">
+                <h1>Sua conta digital
+                    em um único lugar</h1>
+                <p>A modernidade ao seu favor,
+                    com nosso aplicativo você além
+                    de ter tudo em mãos
+                    que um banco pode oferecer, também
+                    você iré encontrar facilidade
+                    nas operações e muitas outras vantagens</p>
+
+                <a href="#" class="home-btn">Abrir conta</a>
+            </div>
+            <div class="sessao2-img">
+                <img src="./midia/iPhone 13.png" alt="Banco Digital" >
+            </div>
+
+        </section>
+
+        <!--<section class="sessao3">
+
+            <img class="cartao-img" src="./midia/card1.png" alt="">
+
+        </section>-->
+
+
+        <section class="sessao-form" id="formulario">
+            <div class="formulario">
+                <h2>Contato</h2>
+                <form action="#" id="formulario">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                    <label>Mensagem</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <button type="submit" onclick="limpaForm(event)">Enviar</button>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <div id="container-footer">
+                <div id="contatos">
+                    <h1>F4 BANK</h1>
+                    <p>O banco que inclui você.</p>
+
+                    <div id="social-media">
+                        <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://web.whatsapp.com/" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Para você</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">F4 Pessoa Física</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">F4 Empresarial</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">F4 Crédito</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Seguros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Emprétimos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Investimento</a>
+                    </li>
+                </ul>
+
+                <div id="footer_subscribe">
+                    <h3>Subscribe</h3>
+
+                    <p>
+                        Digite seu e-mail para ser notificado sobre nossas novidades soluções
+                    </p>
+
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer_copyright">
+                &#169
+                2023 all rights reserved
+            </div>
+        </footer>
+    </main>
+
+
+
+</body>
+
+</html>
